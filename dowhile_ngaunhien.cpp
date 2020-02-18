@@ -1,12 +1,17 @@
 #include<iostream>
+#include<random>
 
 using namespace std;
 
 int main(){
 
     int num;
-    srand(time(NULL));
-    int s = rand()%10 + 1;
+    // srand(time(NULL));
+    // int s = rand()%10 + 1;
+    random_device rd;
+    mt19937 rng(rd());
+    uniform_int_distribution<int> uni(1,10);
+    auto s = uni(rng);
     do
     {
         cout<<"Nhap so duong N: "<<endl;
