@@ -18,7 +18,7 @@ int main(){
     int *q = &arr[0];
     cout<<"value of arr[] is: "<<arr<<endl;
     cout<<"value of q is: "<<q<<endl;
-    cout<<"&q is: "<<&q;
+    cout<<"&q is: "<<&q<<endl;
 
     q++;
     cout<<"value of q is: "<<q<<endl;
@@ -35,5 +35,12 @@ int main(){
     (*q) +=3 ;
     cout<<"value of q is: "<<q<<endl;
     cout<<"&q is: "<<*q<<endl;   
+
+    //duyet mang bang con tro
+    for (int* ptr = arr; ptr < arr + sizeof(arr)/sizeof(*arr); ptr++)
+    {
+        cout<<*ptr<<" | ";
+    }
+    
 
 }
