@@ -28,5 +28,6 @@ int main(){
     }
     else{
             cout<<"Could not file this file..."<<endl;
-        }
+    }
+    inputFile.close();
 }
