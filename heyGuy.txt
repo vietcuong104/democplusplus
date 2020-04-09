@@ -1,0 +1,3 @@
+This is a tutorial for testing function writing a text file with C++ program
+12344321
+Khong sao ma em day roi roi...

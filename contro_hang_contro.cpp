@@ -16,4 +16,6 @@ int main(){
     int val = 10;
     int *const ptr2 = &val;
     *ptr2 = 20;
+
+    //hang con tro hang: const int *const ptr - ko thay doi duoc dia chi ptr tro toi lan gia tri cua ptr
 }
